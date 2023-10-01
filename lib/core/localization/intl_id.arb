@@ -1,0 +1,84 @@
+{
+  "dashboard": "Dashboard",
+  "appName" : "Cubit",
+  "companyName" : "Clean Architecture",
+
+  "rsSymbol" : "\u20B9 ",
+
+  "signUpFormTitle" : "Let's Get Started!",
+  "signUpFormSubTitle" : "We just need a few details, and you'll\nbe on your way",
+
+  "forgotPasswordFormTitle" : "Forgot password",
+  "forgotPasswordFormSubTitle" : "Enter Mobile number registered with your account, to receive OTP",
+
+  "createNewPasswordFormTitle" : "Create new password",
+  "createNewPasswordFormSubTitle" : "Your new password should be different from previously used password",
+
+  "verifyOtpMobileTitle" : "Verify your mobile number",
+  "verifyOtpMobileSubTitle1" : "We have sent an OTP to your mobile number",
+  "verifyOtpMobileSubTitle2" : "to complete your mobile number verification\n",
+  "verifyOtpMobileSubTitle3" : "please enter 4-digit activation code",
+  "verifyOtpPasswordTitle" : "Verification code",
+  "verifyOtpPasswordSubTitle" : "Please enter the OTP sent on your \nregistered mobile number",
+
+  "newSignUpNavigation" : "Sign up",
+  "loginHereNavigation" : "Login here",
+  "forgotPasswordNavigation" : "Forgot password?",
+
+  "doNotHaveAnAccountLabel" : "Do not have an account?",
+  "alreadyAccountLabel" : "Already have an account?",
+
+  "returnLabel" : "Return",
+  "procurementReturnLabel" : "Procurement Return",
+  "amazonReturnType" : "Amazon",
+  "blueDartReturn" : "Blue dart",
+  "deliveryReturn" : "Delivery",
+  "procurementReturn" : "Procurement",
+
+  "logoutLabel" : "Logout",
+  "versionLabel" : "App Version",
+
+  "firstNameTextFieldHint" : "First name",
+  "lastNameTextFieldHint" : "Last name",
+  "emailTextFieldHint" : "Email",
+  "passwordTextFieldHint" : "Password",
+  "confirmPasswordTextFieldHint" : "Confirm password",
+  "mobileNumberTextFieldHint" : "Mobile number",
+  "newPasswordTextFieldHint" : "New password",
+  "newConfirmPasswordTextFieldHint" : "New confirm password",
+  "oldPasswordTextFieldHint" : "Old password",
+  "otpTextFieldHint" : "OTP",
+  "nameTextFieldHint" : "Name",
+
+  "homeMenu" : "Home",
+  "returnsMenu" : "Return",
+  "profileMenu" : "Profile",
+
+  "termsConditionRules" : "Terms and condition",
+
+  "loginButton" : "Login",
+  "vendorDeleteButton" : "Delete",
+  "submitButton" : "Submit",
+  "doneButton" : "Done",
+  "addButton" : "Add",
+  "finishButton" : "Finish",
+
+  "cameraChoose" : "Camera",
+  "galleryChoose" : "Gallery",
+  "profilePictureChooseTitle" : "Choose profile picture",
+
+  "loginTitleToast" : "Login",
+  "signUpTitleToast" : "Sign up",
+
+  "deleteTitleToast" : "Listing delete",
+  "deleteSuccessDescriptionToast" : "Delete successful",
+  "deleteFailDescriptionToast" : "Delete failed",
+  "noInternetToast" : "Internet connection",
+  "noInternetDescriptionToast" : "No internet connect",
+
+  "noDataLabel" : "No data found!",
+  "tryAgainLabel" : "Refresh",
+
+  "comingSoonLabel" : "Opps, Coming soon!",
+  "comingSoonDescriptionLabel" : "This feature will be coming soon, give dealer your feedback for improve this app"
+}

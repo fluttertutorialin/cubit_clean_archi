@@ -1,0 +1,76 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - '**.freezed.dart'
+    - '**.g.dart'
+    - '**.mocks.dart'
+    - '**/core/localization/generated/**'
+  errors:
+    invalid_annotation_target: ignore
+
+linter:
+  rules:
+    avoid_print: true
+    prefer_single_quotes: true
+    avoid_function_literals_in_foreach_calls: false
+    always_declare_return_types: false
+    unnecessary_new: true
+    avoid_empty_else: true
+    avoid_unused_constructor_parameters: true
+    prefer_relative_imports: true
+    curly_braces_in_flow_control_structures: false
+    constant_identifier_names: false
+    empty_catches: false
+    depend_on_referenced_packages: false
+    use_key_in_widget_constructors: false
+
+    unnecessary_await_in_return: true
+    unnecessary_brace_in_string_interps: true
+    unnecessary_const: true
+    unnecessary_constructor_name: true
+    unnecessary_getters_setters: true
+    unnecessary_lambdas: false
+    unnecessary_late: true
+    unnecessary_null_aware_assignments: true
+    unnecessary_null_checks: true
+    unnecessary_null_in_if_null_operators: true
+    unnecessary_nullable_for_final_variable_declarations: true
+    unnecessary_overrides: true
+    unnecessary_parenthesis: true
+    unnecessary_raw_strings: false
+    unnecessary_statements: true
+    unnecessary_string_escapes: true
+    unnecessary_string_interpolations: true
+    unnecessary_this: true
+    unnecessary_to_list_in_spreads: true
+    no_duplicate_case_values: true
+
+dart_code_metrics:
+  anti-patterns:
+    - long-method
+    - long-parameter-list
+  metrics:
+    cyclomatic-complexity: 20
+    maximum-nesting-level: 5
+    number-of-parameters: 4
+    source-lines-of-code: 50
+  metrics-exclude:
+    - test/**
+  rules:
+    - newline-before-return
+    - no-boolean-literal-compare
+    - no-empty-block
+    - prefer-trailing-comma
+    - prefer-conditional-expressions
+    - no-equal-then-else
+    - prefer-match-file-name
+    - avoid-unused-parameters
+    - member-ordering:
+        widgets-order:
+          - init-state-method
+          - did-change-dependencies-method
+          - did-update-widget-method
+          - build-method
+          - dispose-method
+
