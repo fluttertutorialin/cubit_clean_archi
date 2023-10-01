@@ -3,6 +3,9 @@ Step 1: flutter update-packages --force-upgrade
 Step 2: flutter gen-l10n
 Step 3: flutter pub run build_runner build --delete-conflicting-outputs
 
+# blog
+https://medium.com/@kamal.lakhani56/clean-architecture-f23b7d9c6ee7
+
 # security
 Pagination: emit(state.copyWith(laps: [...state.laps, state.ticks]));
 Switch case condition: state.runtimeType
