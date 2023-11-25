@@ -9,7 +9,7 @@ import '../../../injectable.dart';
 import '../../cubits/splash/splash_cubits.dart';
 
 class SplashPage extends StatelessWidget {
-  const SplashPage({Key? key}) : super(key: key);
+  const SplashPage({super.key});
 
   //final SplashCubit splashCubit;
   //const SplashPage(this.splashCubit, {Key? key}) : super(key: key);

@@ -9,5 +9,5 @@ class SignUpModels {
     id = json['id'];
   }
 
-  SignUpEntity toDomainEntity() => SignUpEntity();
+  SignUpEntity toDomainEntity() => const SignUpEntity();
 }

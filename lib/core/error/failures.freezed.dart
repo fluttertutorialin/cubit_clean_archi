@@ -99,20 +99,21 @@ class _$FailureCopyWithImpl<$Res, $Val extends Failure>
 }
 
 /// @nodoc
-abstract class _$$_FailureCopyWith<$Res> implements $FailureCopyWith<$Res> {
-  factory _$$_FailureCopyWith(
-          _$_Failure value, $Res Function(_$_Failure) then) =
-      __$$_FailureCopyWithImpl<$Res>;
+abstract class _$$FailureImplCopyWith<$Res> implements $FailureCopyWith<$Res> {
+  factory _$$FailureImplCopyWith(
+          _$FailureImpl value, $Res Function(_$FailureImpl) then) =
+      __$$FailureImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String message});
 }
 
 /// @nodoc
-class __$$_FailureCopyWithImpl<$Res>
-    extends _$FailureCopyWithImpl<$Res, _$_Failure>
-    implements _$$_FailureCopyWith<$Res> {
-  __$$_FailureCopyWithImpl(_$_Failure _value, $Res Function(_$_Failure) _then)
+class __$$FailureImplCopyWithImpl<$Res>
+    extends _$FailureCopyWithImpl<$Res, _$FailureImpl>
+    implements _$$FailureImplCopyWith<$Res> {
+  __$$FailureImplCopyWithImpl(
+      _$FailureImpl _value, $Res Function(_$FailureImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -120,7 +121,7 @@ class __$$_FailureCopyWithImpl<$Res>
   $Res call({
     Object? message = null,
   }) {
-    return _then(_$_Failure(
+    return _then(_$FailureImpl(
       null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -131,8 +132,8 @@ class __$$_FailureCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Failure implements _Failure {
-  const _$_Failure(this.message);
+class _$FailureImpl implements _Failure {
+  const _$FailureImpl(this.message);
 
   @override
   final String message;
@@ -146,7 +147,7 @@ class _$_Failure implements _Failure {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Failure &&
+            other is _$FailureImpl &&
             (identical(other.message, message) || other.message == message));
   }
 
@@ -156,8 +157,8 @@ class _$_Failure implements _Failure {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FailureCopyWith<_$_Failure> get copyWith =>
-      __$$_FailureCopyWithImpl<_$_Failure>(this, _$identity);
+  _$$FailureImplCopyWith<_$FailureImpl> get copyWith =>
+      __$$FailureImplCopyWithImpl<_$FailureImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -229,33 +230,33 @@ class _$_Failure implements _Failure {
 }
 
 abstract class _Failure implements Failure {
-  const factory _Failure(final String message) = _$_Failure;
+  const factory _Failure(final String message) = _$FailureImpl;
 
   @override
   String get message;
   @override
   @JsonKey(ignore: true)
-  _$$_FailureCopyWith<_$_Failure> get copyWith =>
+  _$$FailureImplCopyWith<_$FailureImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_NotFoundFailureCopyWith<$Res>
+abstract class _$$NotFoundFailureImplCopyWith<$Res>
     implements $FailureCopyWith<$Res> {
-  factory _$$_NotFoundFailureCopyWith(
-          _$_NotFoundFailure value, $Res Function(_$_NotFoundFailure) then) =
-      __$$_NotFoundFailureCopyWithImpl<$Res>;
+  factory _$$NotFoundFailureImplCopyWith(_$NotFoundFailureImpl value,
+          $Res Function(_$NotFoundFailureImpl) then) =
+      __$$NotFoundFailureImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String message});
 }
 
 /// @nodoc
-class __$$_NotFoundFailureCopyWithImpl<$Res>
-    extends _$FailureCopyWithImpl<$Res, _$_NotFoundFailure>
-    implements _$$_NotFoundFailureCopyWith<$Res> {
-  __$$_NotFoundFailureCopyWithImpl(
-      _$_NotFoundFailure _value, $Res Function(_$_NotFoundFailure) _then)
+class __$$NotFoundFailureImplCopyWithImpl<$Res>
+    extends _$FailureCopyWithImpl<$Res, _$NotFoundFailureImpl>
+    implements _$$NotFoundFailureImplCopyWith<$Res> {
+  __$$NotFoundFailureImplCopyWithImpl(
+      _$NotFoundFailureImpl _value, $Res Function(_$NotFoundFailureImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -263,7 +264,7 @@ class __$$_NotFoundFailureCopyWithImpl<$Res>
   $Res call({
     Object? message = null,
   }) {
-    return _then(_$_NotFoundFailure(
+    return _then(_$NotFoundFailureImpl(
       null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -274,8 +275,8 @@ class __$$_NotFoundFailureCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NotFoundFailure implements _NotFoundFailure {
-  const _$_NotFoundFailure(this.message);
+class _$NotFoundFailureImpl implements _NotFoundFailure {
+  const _$NotFoundFailureImpl(this.message);
 
   @override
   final String message;
@@ -289,7 +290,7 @@ class _$_NotFoundFailure implements _NotFoundFailure {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_NotFoundFailure &&
+            other is _$NotFoundFailureImpl &&
             (identical(other.message, message) || other.message == message));
   }
 
@@ -299,8 +300,9 @@ class _$_NotFoundFailure implements _NotFoundFailure {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_NotFoundFailureCopyWith<_$_NotFoundFailure> get copyWith =>
-      __$$_NotFoundFailureCopyWithImpl<_$_NotFoundFailure>(this, _$identity);
+  _$$NotFoundFailureImplCopyWith<_$NotFoundFailureImpl> get copyWith =>
+      __$$NotFoundFailureImplCopyWithImpl<_$NotFoundFailureImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -372,33 +374,33 @@ class _$_NotFoundFailure implements _NotFoundFailure {
 }
 
 abstract class _NotFoundFailure implements Failure {
-  const factory _NotFoundFailure(final String message) = _$_NotFoundFailure;
+  const factory _NotFoundFailure(final String message) = _$NotFoundFailureImpl;
 
   @override
   String get message;
   @override
   @JsonKey(ignore: true)
-  _$$_NotFoundFailureCopyWith<_$_NotFoundFailure> get copyWith =>
+  _$$NotFoundFailureImplCopyWith<_$NotFoundFailureImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_ErrorFailureCopyWith<$Res>
+abstract class _$$ErrorFailureImplCopyWith<$Res>
     implements $FailureCopyWith<$Res> {
-  factory _$$_ErrorFailureCopyWith(
-          _$_ErrorFailure value, $Res Function(_$_ErrorFailure) then) =
-      __$$_ErrorFailureCopyWithImpl<$Res>;
+  factory _$$ErrorFailureImplCopyWith(
+          _$ErrorFailureImpl value, $Res Function(_$ErrorFailureImpl) then) =
+      __$$ErrorFailureImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String message});
 }
 
 /// @nodoc
-class __$$_ErrorFailureCopyWithImpl<$Res>
-    extends _$FailureCopyWithImpl<$Res, _$_ErrorFailure>
-    implements _$$_ErrorFailureCopyWith<$Res> {
-  __$$_ErrorFailureCopyWithImpl(
-      _$_ErrorFailure _value, $Res Function(_$_ErrorFailure) _then)
+class __$$ErrorFailureImplCopyWithImpl<$Res>
+    extends _$FailureCopyWithImpl<$Res, _$ErrorFailureImpl>
+    implements _$$ErrorFailureImplCopyWith<$Res> {
+  __$$ErrorFailureImplCopyWithImpl(
+      _$ErrorFailureImpl _value, $Res Function(_$ErrorFailureImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -406,7 +408,7 @@ class __$$_ErrorFailureCopyWithImpl<$Res>
   $Res call({
     Object? message = null,
   }) {
-    return _then(_$_ErrorFailure(
+    return _then(_$ErrorFailureImpl(
       null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -417,8 +419,8 @@ class __$$_ErrorFailureCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ErrorFailure implements _ErrorFailure {
-  const _$_ErrorFailure(this.message);
+class _$ErrorFailureImpl implements _ErrorFailure {
+  const _$ErrorFailureImpl(this.message);
 
   @override
   final String message;
@@ -432,7 +434,7 @@ class _$_ErrorFailure implements _ErrorFailure {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ErrorFailure &&
+            other is _$ErrorFailureImpl &&
             (identical(other.message, message) || other.message == message));
   }
 
@@ -442,8 +444,8 @@ class _$_ErrorFailure implements _ErrorFailure {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ErrorFailureCopyWith<_$_ErrorFailure> get copyWith =>
-      __$$_ErrorFailureCopyWithImpl<_$_ErrorFailure>(this, _$identity);
+  _$$ErrorFailureImplCopyWith<_$ErrorFailureImpl> get copyWith =>
+      __$$ErrorFailureImplCopyWithImpl<_$ErrorFailureImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -515,12 +517,12 @@ class _$_ErrorFailure implements _ErrorFailure {
 }
 
 abstract class _ErrorFailure implements Failure {
-  const factory _ErrorFailure(final String message) = _$_ErrorFailure;
+  const factory _ErrorFailure(final String message) = _$ErrorFailureImpl;
 
   @override
   String get message;
   @override
   @JsonKey(ignore: true)
-  _$$_ErrorFailureCopyWith<_$_ErrorFailure> get copyWith =>
+  _$$ErrorFailureImplCopyWith<_$ErrorFailureImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

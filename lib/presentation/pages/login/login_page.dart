@@ -15,7 +15,7 @@ import '../../widgets/components/components.dart';
 import '../../../core/extensions/extensions.dart';
 
 class LoginPage extends StatefulWidget with FormValidationMixin {
-  LoginPage({Key? key}) : super(key: key);
+  LoginPage({super.key});
 
   @override
   createState() => _LoginPageState();

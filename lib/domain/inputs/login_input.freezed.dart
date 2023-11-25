@@ -31,14 +31,14 @@ mixin _$LoginInput {
 /// @nodoc
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
-class _$_LoginInput implements _LoginInput {
-  _$_LoginInput(
+class _$LoginInputImpl implements _LoginInput {
+  _$LoginInputImpl(
       {@JsonKey(name: JsonKeyConstant.mobileJsonParamKey) required this.mobile,
       @JsonKey(name: JsonKeyConstant.passwordJsonParamKey)
       required this.password});
 
-  factory _$_LoginInput.fromJson(Map<String, dynamic> json) =>
-      _$$_LoginInputFromJson(json);
+  factory _$LoginInputImpl.fromJson(Map<String, dynamic> json) =>
+      _$$LoginInputImplFromJson(json);
 
   @override
   @JsonKey(name: JsonKeyConstant.mobileJsonParamKey)
@@ -54,7 +54,7 @@ class _$_LoginInput implements _LoginInput {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_LoginInputToJson(
+    return _$$LoginInputImplToJson(
       this,
     );
   }
@@ -65,10 +65,10 @@ abstract class _LoginInput implements LoginInput {
       {@JsonKey(name: JsonKeyConstant.mobileJsonParamKey)
       required final String mobile,
       @JsonKey(name: JsonKeyConstant.passwordJsonParamKey)
-      required final String password}) = _$_LoginInput;
+      required final String password}) = _$LoginInputImpl;
 
   factory _LoginInput.fromJson(Map<String, dynamic> json) =
-      _$_LoginInput.fromJson;
+      _$LoginInputImpl.fromJson;
 
   @override
   @JsonKey(name: JsonKeyConstant.mobileJsonParamKey)

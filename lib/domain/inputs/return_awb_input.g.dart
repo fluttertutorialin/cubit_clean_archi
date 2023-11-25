@@ -6,14 +6,15 @@ part of 'return_awb_input.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ReturnAwbInput _$$_ReturnAwbInputFromJson(Map<String, dynamic> json) =>
-    _$_ReturnAwbInput(
-      awbNumber: json['AWBNO'] as String,
-      userId: json['USERID'] as int,
+_$ReturnAwbInputImpl _$$ReturnAwbInputImplFromJson(Map<String, dynamic> json) =>
+    _$ReturnAwbInputImpl(
+      awbNumber: json['awbNumber'] as String,
+      userId: json['userId'] as int,
     );
 
-Map<String, dynamic> _$$_ReturnAwbInputToJson(_$_ReturnAwbInput instance) =>
+Map<String, dynamic> _$$ReturnAwbInputImplToJson(
+        _$ReturnAwbInputImpl instance) =>
     <String, dynamic>{
-      'AWBNO': instance.awbNumber,
-      'USERID': instance.userId,
+      'awbNumber': instance.awbNumber,
+      'userId': instance.userId,
     };

@@ -5,7 +5,7 @@ import '../../../cubits/return_list/return_list_cubit.dart';
 import '../../../widgets/widget/widget.dart';
 
 class ReturnListPage extends StatelessWidget {
-  const ReturnListPage({Key? key}) : super(key: key);
+  const ReturnListPage({super.key});
 
   @override
   Widget build(BuildContext context) => Scaffold(

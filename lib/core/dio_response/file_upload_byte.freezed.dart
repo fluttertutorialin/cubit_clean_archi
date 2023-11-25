@@ -22,8 +22,8 @@ mixin _$FileUploadByte {
 
 /// @nodoc
 
-class _$_FileUploadByte extends _FileUploadByte {
-  const _$_FileUploadByte({final List<int>? bytesData, this.filename})
+class _$FileUploadByteImpl extends _FileUploadByte {
+  const _$FileUploadByteImpl({final List<int>? bytesData, this.filename})
       : _bytesData = bytesData,
         super._();
 
@@ -48,7 +48,8 @@ class _$_FileUploadByte extends _FileUploadByte {
 
 abstract class _FileUploadByte extends FileUploadByte {
   const factory _FileUploadByte(
-      {final List<int>? bytesData, final String? filename}) = _$_FileUploadByte;
+      {final List<int>? bytesData,
+      final String? filename}) = _$FileUploadByteImpl;
   const _FileUploadByte._() : super._();
 
   @override

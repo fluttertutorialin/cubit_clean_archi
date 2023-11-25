@@ -72,11 +72,11 @@ class _$ReturnModelCopyWithImpl<$Res, $Val extends ReturnModel>
 }
 
 /// @nodoc
-abstract class _$$_ReturnModelCopyWith<$Res>
+abstract class _$$ReturnModelImplCopyWith<$Res>
     implements $ReturnModelCopyWith<$Res> {
-  factory _$$_ReturnModelCopyWith(
-          _$_ReturnModel value, $Res Function(_$_ReturnModel) then) =
-      __$$_ReturnModelCopyWithImpl<$Res>;
+  factory _$$ReturnModelImplCopyWith(
+          _$ReturnModelImpl value, $Res Function(_$ReturnModelImpl) then) =
+      __$$ReturnModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -85,11 +85,11 @@ abstract class _$$_ReturnModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ReturnModelCopyWithImpl<$Res>
-    extends _$ReturnModelCopyWithImpl<$Res, _$_ReturnModel>
-    implements _$$_ReturnModelCopyWith<$Res> {
-  __$$_ReturnModelCopyWithImpl(
-      _$_ReturnModel _value, $Res Function(_$_ReturnModel) _then)
+class __$$ReturnModelImplCopyWithImpl<$Res>
+    extends _$ReturnModelCopyWithImpl<$Res, _$ReturnModelImpl>
+    implements _$$ReturnModelImplCopyWith<$Res> {
+  __$$ReturnModelImplCopyWithImpl(
+      _$ReturnModelImpl _value, $Res Function(_$ReturnModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -98,7 +98,7 @@ class __$$_ReturnModelCopyWithImpl<$Res>
     Object? code = freezed,
     Object? message = freezed,
   }) {
-    return _then(_$_ReturnModel(
+    return _then(_$ReturnModelImpl(
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -113,14 +113,14 @@ class __$$_ReturnModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ReturnModel extends _ReturnModel {
-  const _$_ReturnModel(
+class _$ReturnModelImpl extends _ReturnModel {
+  const _$ReturnModelImpl(
       {@JsonKey(name: JsonKeyConstant.statusCodeJsonKey) this.code,
       @JsonKey(name: JsonKeyConstant.messageJsonKey) this.message})
       : super._();
 
-  factory _$_ReturnModel.fromJson(Map<String, dynamic> json) =>
-      _$$_ReturnModelFromJson(json);
+  factory _$ReturnModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ReturnModelImplFromJson(json);
 
   @override
   @JsonKey(name: JsonKeyConstant.statusCodeJsonKey)
@@ -138,7 +138,7 @@ class _$_ReturnModel extends _ReturnModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ReturnModel &&
+            other is _$ReturnModelImpl &&
             (identical(other.code, code) || other.code == code) &&
             (identical(other.message, message) || other.message == message));
   }
@@ -150,12 +150,12 @@ class _$_ReturnModel extends _ReturnModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ReturnModelCopyWith<_$_ReturnModel> get copyWith =>
-      __$$_ReturnModelCopyWithImpl<_$_ReturnModel>(this, _$identity);
+  _$$ReturnModelImplCopyWith<_$ReturnModelImpl> get copyWith =>
+      __$$ReturnModelImplCopyWithImpl<_$ReturnModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ReturnModelToJson(
+    return _$$ReturnModelImplToJson(
       this,
     );
   }
@@ -165,11 +165,11 @@ abstract class _ReturnModel extends ReturnModel {
   const factory _ReturnModel(
       {@JsonKey(name: JsonKeyConstant.statusCodeJsonKey) final String? code,
       @JsonKey(name: JsonKeyConstant.messageJsonKey)
-      final String? message}) = _$_ReturnModel;
+      final String? message}) = _$ReturnModelImpl;
   const _ReturnModel._() : super._();
 
   factory _ReturnModel.fromJson(Map<String, dynamic> json) =
-      _$_ReturnModel.fromJson;
+      _$ReturnModelImpl.fromJson;
 
   @override
   @JsonKey(name: JsonKeyConstant.statusCodeJsonKey)
@@ -179,6 +179,6 @@ abstract class _ReturnModel extends ReturnModel {
   String? get message;
   @override
   @JsonKey(ignore: true)
-  _$$_ReturnModelCopyWith<_$_ReturnModel> get copyWith =>
+  _$$ReturnModelImplCopyWith<_$ReturnModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

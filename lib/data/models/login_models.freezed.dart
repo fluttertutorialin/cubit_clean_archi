@@ -80,11 +80,11 @@ class _$LoginModelsCopyWithImpl<$Res, $Val extends LoginModels>
 }
 
 /// @nodoc
-abstract class _$$_LoginModelsCopyWith<$Res>
+abstract class _$$LoginModelsImplCopyWith<$Res>
     implements $LoginModelsCopyWith<$Res> {
-  factory _$$_LoginModelsCopyWith(
-          _$_LoginModels value, $Res Function(_$_LoginModels) then) =
-      __$$_LoginModelsCopyWithImpl<$Res>;
+  factory _$$LoginModelsImplCopyWith(
+          _$LoginModelsImpl value, $Res Function(_$LoginModelsImpl) then) =
+      __$$LoginModelsImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -94,11 +94,11 @@ abstract class _$$_LoginModelsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_LoginModelsCopyWithImpl<$Res>
-    extends _$LoginModelsCopyWithImpl<$Res, _$_LoginModels>
-    implements _$$_LoginModelsCopyWith<$Res> {
-  __$$_LoginModelsCopyWithImpl(
-      _$_LoginModels _value, $Res Function(_$_LoginModels) _then)
+class __$$LoginModelsImplCopyWithImpl<$Res>
+    extends _$LoginModelsCopyWithImpl<$Res, _$LoginModelsImpl>
+    implements _$$LoginModelsImplCopyWith<$Res> {
+  __$$LoginModelsImplCopyWithImpl(
+      _$LoginModelsImpl _value, $Res Function(_$LoginModelsImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -108,7 +108,7 @@ class __$$_LoginModelsCopyWithImpl<$Res>
     Object? userName = freezed,
     Object? mobile = freezed,
   }) {
-    return _then(_$_LoginModels(
+    return _then(_$LoginModelsImpl(
       userId: freezed == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
@@ -127,15 +127,15 @@ class __$$_LoginModelsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_LoginModels extends _LoginModels {
-  const _$_LoginModels(
+class _$LoginModelsImpl extends _LoginModels {
+  const _$LoginModelsImpl(
       {@JsonKey(name: JsonKeyConstant.userIdJsonKey) this.userId,
       @JsonKey(name: JsonKeyConstant.userNameJsonKey) this.userName,
       @JsonKey(name: JsonKeyConstant.mobileJsonKey) this.mobile})
       : super._();
 
-  factory _$_LoginModels.fromJson(Map<String, dynamic> json) =>
-      _$$_LoginModelsFromJson(json);
+  factory _$LoginModelsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$LoginModelsImplFromJson(json);
 
   @override
   @JsonKey(name: JsonKeyConstant.userIdJsonKey)
@@ -156,7 +156,7 @@ class _$_LoginModels extends _LoginModels {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LoginModels &&
+            other is _$LoginModelsImpl &&
             (identical(other.userId, userId) || other.userId == userId) &&
             (identical(other.userName, userName) ||
                 other.userName == userName) &&
@@ -170,12 +170,12 @@ class _$_LoginModels extends _LoginModels {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_LoginModelsCopyWith<_$_LoginModels> get copyWith =>
-      __$$_LoginModelsCopyWithImpl<_$_LoginModels>(this, _$identity);
+  _$$LoginModelsImplCopyWith<_$LoginModelsImpl> get copyWith =>
+      __$$LoginModelsImplCopyWithImpl<_$LoginModelsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_LoginModelsToJson(
+    return _$$LoginModelsImplToJson(
       this,
     );
   }
@@ -186,11 +186,11 @@ abstract class _LoginModels extends LoginModels {
       {@JsonKey(name: JsonKeyConstant.userIdJsonKey) final int? userId,
       @JsonKey(name: JsonKeyConstant.userNameJsonKey) final String? userName,
       @JsonKey(name: JsonKeyConstant.mobileJsonKey)
-      final String? mobile}) = _$_LoginModels;
+      final String? mobile}) = _$LoginModelsImpl;
   const _LoginModels._() : super._();
 
   factory _LoginModels.fromJson(Map<String, dynamic> json) =
-      _$_LoginModels.fromJson;
+      _$LoginModelsImpl.fromJson;
 
   @override
   @JsonKey(name: JsonKeyConstant.userIdJsonKey)
@@ -203,6 +203,6 @@ abstract class _LoginModels extends LoginModels {
   String? get mobile;
   @override
   @JsonKey(ignore: true)
-  _$$_LoginModelsCopyWith<_$_LoginModels> get copyWith =>
+  _$$LoginModelsImplCopyWith<_$LoginModelsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

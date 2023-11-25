@@ -69,22 +69,22 @@ class _$ReturnListStateCopyWithImpl<$Res, $Val extends ReturnListState>
 }
 
 /// @nodoc
-abstract class _$$_ReturnListStateCopyWith<$Res>
+abstract class _$$ReturnListStateImplCopyWith<$Res>
     implements $ReturnListStateCopyWith<$Res> {
-  factory _$$_ReturnListStateCopyWith(
-          _$_ReturnListState value, $Res Function(_$_ReturnListState) then) =
-      __$$_ReturnListStateCopyWithImpl<$Res>;
+  factory _$$ReturnListStateImplCopyWith(_$ReturnListStateImpl value,
+          $Res Function(_$ReturnListStateImpl) then) =
+      __$$ReturnListStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool loading, List<String> returnList, String error});
 }
 
 /// @nodoc
-class __$$_ReturnListStateCopyWithImpl<$Res>
-    extends _$ReturnListStateCopyWithImpl<$Res, _$_ReturnListState>
-    implements _$$_ReturnListStateCopyWith<$Res> {
-  __$$_ReturnListStateCopyWithImpl(
-      _$_ReturnListState _value, $Res Function(_$_ReturnListState) _then)
+class __$$ReturnListStateImplCopyWithImpl<$Res>
+    extends _$ReturnListStateCopyWithImpl<$Res, _$ReturnListStateImpl>
+    implements _$$ReturnListStateImplCopyWith<$Res> {
+  __$$ReturnListStateImplCopyWithImpl(
+      _$ReturnListStateImpl _value, $Res Function(_$ReturnListStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -94,7 +94,7 @@ class __$$_ReturnListStateCopyWithImpl<$Res>
     Object? returnList = null,
     Object? error = null,
   }) {
-    return _then(_$_ReturnListState(
+    return _then(_$ReturnListStateImpl(
       loading: null == loading
           ? _value.loading
           : loading // ignore: cast_nullable_to_non_nullable
@@ -113,8 +113,8 @@ class __$$_ReturnListStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ReturnListState implements _ReturnListState {
-  const _$_ReturnListState(
+class _$ReturnListStateImpl implements _ReturnListState {
+  const _$ReturnListStateImpl(
       {this.loading = false,
       required final List<String> returnList,
       this.error = ''})
@@ -144,7 +144,7 @@ class _$_ReturnListState implements _ReturnListState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ReturnListState &&
+            other is _$ReturnListStateImpl &&
             (identical(other.loading, loading) || other.loading == loading) &&
             const DeepCollectionEquality()
                 .equals(other._returnList, _returnList) &&
@@ -158,15 +158,16 @@ class _$_ReturnListState implements _ReturnListState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ReturnListStateCopyWith<_$_ReturnListState> get copyWith =>
-      __$$_ReturnListStateCopyWithImpl<_$_ReturnListState>(this, _$identity);
+  _$$ReturnListStateImplCopyWith<_$ReturnListStateImpl> get copyWith =>
+      __$$ReturnListStateImplCopyWithImpl<_$ReturnListStateImpl>(
+          this, _$identity);
 }
 
 abstract class _ReturnListState implements ReturnListState {
   const factory _ReturnListState(
       {final bool loading,
       required final List<String> returnList,
-      final String error}) = _$_ReturnListState;
+      final String error}) = _$ReturnListStateImpl;
 
   @override
   bool get loading;
@@ -176,6 +177,6 @@ abstract class _ReturnListState implements ReturnListState {
   String get error;
   @override
   @JsonKey(ignore: true)
-  _$$_ReturnListStateCopyWith<_$_ReturnListState> get copyWith =>
+  _$$ReturnListStateImplCopyWith<_$ReturnListStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

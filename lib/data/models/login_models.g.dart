@@ -6,16 +6,16 @@ part of 'login_models.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_LoginModels _$$_LoginModelsFromJson(Map<String, dynamic> json) =>
-    _$_LoginModels(
-      userId: json['USERID'] as int?,
-      userName: json['USERNAME'] as String?,
-      mobile: json['MOBILENO'] as String?,
+_$LoginModelsImpl _$$LoginModelsImplFromJson(Map<String, dynamic> json) =>
+    _$LoginModelsImpl(
+      userId: json['userId'] as int?,
+      userName: json['userName'] as String?,
+      mobile: json['mobile'] as String?,
     );
 
-Map<String, dynamic> _$$_LoginModelsToJson(_$_LoginModels instance) =>
+Map<String, dynamic> _$$LoginModelsImplToJson(_$LoginModelsImpl instance) =>
     <String, dynamic>{
-      'USERID': instance.userId,
-      'USERNAME': instance.userName,
-      'MOBILENO': instance.mobile,
+      'userId': instance.userId,
+      'userName': instance.userName,
+      'mobile': instance.mobile,
     };

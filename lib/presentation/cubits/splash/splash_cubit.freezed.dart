@@ -81,24 +81,25 @@ class _$SplashStateCopyWithImpl<$Res, $Val extends SplashState>
 }
 
 /// @nodoc
-abstract class _$$_LoadingCopyWith<$Res> {
-  factory _$$_LoadingCopyWith(
-          _$_Loading value, $Res Function(_$_Loading) then) =
-      __$$_LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingImplCopyWith<$Res> {
+  factory _$$LoadingImplCopyWith(
+          _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
+      __$$LoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_LoadingCopyWithImpl<$Res>
-    extends _$SplashStateCopyWithImpl<$Res, _$_Loading>
-    implements _$$_LoadingCopyWith<$Res> {
-  __$$_LoadingCopyWithImpl(_$_Loading _value, $Res Function(_$_Loading) _then)
+class __$$LoadingImplCopyWithImpl<$Res>
+    extends _$SplashStateCopyWithImpl<$Res, _$LoadingImpl>
+    implements _$$LoadingImplCopyWith<$Res> {
+  __$$LoadingImplCopyWithImpl(
+      _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Loading implements _Loading {
-  const _$_Loading();
+class _$LoadingImpl implements _Loading {
+  const _$LoadingImpl();
 
   @override
   String toString() {
@@ -108,7 +109,7 @@ class _$_Loading implements _Loading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Loading);
+        (other.runtimeType == runtimeType && other is _$LoadingImpl);
   }
 
   @override
@@ -184,29 +185,29 @@ class _$_Loading implements _Loading {
 }
 
 abstract class _Loading implements SplashState {
-  const factory _Loading() = _$_Loading;
+  const factory _Loading() = _$LoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_AuthenticateCopyWith<$Res> {
-  factory _$$_AuthenticateCopyWith(
-          _$_Authenticate value, $Res Function(_$_Authenticate) then) =
-      __$$_AuthenticateCopyWithImpl<$Res>;
+abstract class _$$AuthenticateImplCopyWith<$Res> {
+  factory _$$AuthenticateImplCopyWith(
+          _$AuthenticateImpl value, $Res Function(_$AuthenticateImpl) then) =
+      __$$AuthenticateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_AuthenticateCopyWithImpl<$Res>
-    extends _$SplashStateCopyWithImpl<$Res, _$_Authenticate>
-    implements _$$_AuthenticateCopyWith<$Res> {
-  __$$_AuthenticateCopyWithImpl(
-      _$_Authenticate _value, $Res Function(_$_Authenticate) _then)
+class __$$AuthenticateImplCopyWithImpl<$Res>
+    extends _$SplashStateCopyWithImpl<$Res, _$AuthenticateImpl>
+    implements _$$AuthenticateImplCopyWith<$Res> {
+  __$$AuthenticateImplCopyWithImpl(
+      _$AuthenticateImpl _value, $Res Function(_$AuthenticateImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Authenticate implements _Authenticate {
-  const _$_Authenticate();
+class _$AuthenticateImpl implements _Authenticate {
+  const _$AuthenticateImpl();
 
   @override
   String toString() {
@@ -216,7 +217,7 @@ class _$_Authenticate implements _Authenticate {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Authenticate);
+        (other.runtimeType == runtimeType && other is _$AuthenticateImpl);
   }
 
   @override
@@ -292,29 +293,29 @@ class _$_Authenticate implements _Authenticate {
 }
 
 abstract class _Authenticate implements SplashState {
-  const factory _Authenticate() = _$_Authenticate;
+  const factory _Authenticate() = _$AuthenticateImpl;
 }
 
 /// @nodoc
-abstract class _$$_UnAuthenticatedStateCopyWith<$Res> {
-  factory _$$_UnAuthenticatedStateCopyWith(_$_UnAuthenticatedState value,
-          $Res Function(_$_UnAuthenticatedState) then) =
-      __$$_UnAuthenticatedStateCopyWithImpl<$Res>;
+abstract class _$$UnAuthenticatedStateImplCopyWith<$Res> {
+  factory _$$UnAuthenticatedStateImplCopyWith(_$UnAuthenticatedStateImpl value,
+          $Res Function(_$UnAuthenticatedStateImpl) then) =
+      __$$UnAuthenticatedStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_UnAuthenticatedStateCopyWithImpl<$Res>
-    extends _$SplashStateCopyWithImpl<$Res, _$_UnAuthenticatedState>
-    implements _$$_UnAuthenticatedStateCopyWith<$Res> {
-  __$$_UnAuthenticatedStateCopyWithImpl(_$_UnAuthenticatedState _value,
-      $Res Function(_$_UnAuthenticatedState) _then)
+class __$$UnAuthenticatedStateImplCopyWithImpl<$Res>
+    extends _$SplashStateCopyWithImpl<$Res, _$UnAuthenticatedStateImpl>
+    implements _$$UnAuthenticatedStateImplCopyWith<$Res> {
+  __$$UnAuthenticatedStateImplCopyWithImpl(_$UnAuthenticatedStateImpl _value,
+      $Res Function(_$UnAuthenticatedStateImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_UnAuthenticatedState implements _UnAuthenticatedState {
-  const _$_UnAuthenticatedState();
+class _$UnAuthenticatedStateImpl implements _UnAuthenticatedState {
+  const _$UnAuthenticatedStateImpl();
 
   @override
   String toString() {
@@ -324,7 +325,8 @@ class _$_UnAuthenticatedState implements _UnAuthenticatedState {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_UnAuthenticatedState);
+        (other.runtimeType == runtimeType &&
+            other is _$UnAuthenticatedStateImpl);
   }
 
   @override
@@ -400,5 +402,5 @@ class _$_UnAuthenticatedState implements _UnAuthenticatedState {
 }
 
 abstract class _UnAuthenticatedState implements SplashState {
-  const factory _UnAuthenticatedState() = _$_UnAuthenticatedState;
+  const factory _UnAuthenticatedState() = _$UnAuthenticatedStateImpl;
 }

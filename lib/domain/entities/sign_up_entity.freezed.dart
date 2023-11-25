@@ -75,22 +75,22 @@ class _$SignUpEntityCopyWithImpl<$Res, $Val extends SignUpEntity>
 }
 
 /// @nodoc
-abstract class _$$_SignUpEntityCopyWith<$Res>
+abstract class _$$SignUpEntityImplCopyWith<$Res>
     implements $SignUpEntityCopyWith<$Res> {
-  factory _$$_SignUpEntityCopyWith(
-          _$_SignUpEntity value, $Res Function(_$_SignUpEntity) then) =
-      __$$_SignUpEntityCopyWithImpl<$Res>;
+  factory _$$SignUpEntityImplCopyWith(
+          _$SignUpEntityImpl value, $Res Function(_$SignUpEntityImpl) then) =
+      __$$SignUpEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? userId, String? userName, String? email, String? mobile});
 }
 
 /// @nodoc
-class __$$_SignUpEntityCopyWithImpl<$Res>
-    extends _$SignUpEntityCopyWithImpl<$Res, _$_SignUpEntity>
-    implements _$$_SignUpEntityCopyWith<$Res> {
-  __$$_SignUpEntityCopyWithImpl(
-      _$_SignUpEntity _value, $Res Function(_$_SignUpEntity) _then)
+class __$$SignUpEntityImplCopyWithImpl<$Res>
+    extends _$SignUpEntityCopyWithImpl<$Res, _$SignUpEntityImpl>
+    implements _$$SignUpEntityImplCopyWith<$Res> {
+  __$$SignUpEntityImplCopyWithImpl(
+      _$SignUpEntityImpl _value, $Res Function(_$SignUpEntityImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -101,7 +101,7 @@ class __$$_SignUpEntityCopyWithImpl<$Res>
     Object? email = freezed,
     Object? mobile = freezed,
   }) {
-    return _then(_$_SignUpEntity(
+    return _then(_$SignUpEntityImpl(
       userId: freezed == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
@@ -124,8 +124,9 @@ class __$$_SignUpEntityCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_SignUpEntity extends _SignUpEntity {
-  const _$_SignUpEntity({this.userId, this.userName, this.email, this.mobile})
+class _$SignUpEntityImpl extends _SignUpEntity {
+  const _$SignUpEntityImpl(
+      {this.userId, this.userName, this.email, this.mobile})
       : super._();
 
   @override
@@ -146,7 +147,7 @@ class _$_SignUpEntity extends _SignUpEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SignUpEntity &&
+            other is _$SignUpEntityImpl &&
             (identical(other.userId, userId) || other.userId == userId) &&
             (identical(other.userName, userName) ||
                 other.userName == userName) &&
@@ -160,8 +161,8 @@ class _$_SignUpEntity extends _SignUpEntity {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SignUpEntityCopyWith<_$_SignUpEntity> get copyWith =>
-      __$$_SignUpEntityCopyWithImpl<_$_SignUpEntity>(this, _$identity);
+  _$$SignUpEntityImplCopyWith<_$SignUpEntityImpl> get copyWith =>
+      __$$SignUpEntityImplCopyWithImpl<_$SignUpEntityImpl>(this, _$identity);
 }
 
 abstract class _SignUpEntity extends SignUpEntity {
@@ -169,7 +170,7 @@ abstract class _SignUpEntity extends SignUpEntity {
       {final String? userId,
       final String? userName,
       final String? email,
-      final String? mobile}) = _$_SignUpEntity;
+      final String? mobile}) = _$SignUpEntityImpl;
   const _SignUpEntity._() : super._();
 
   @override
@@ -182,6 +183,6 @@ abstract class _SignUpEntity extends SignUpEntity {
   String? get mobile;
   @override
   @JsonKey(ignore: true)
-  _$$_SignUpEntityCopyWith<_$_SignUpEntity> get copyWith =>
+  _$$SignUpEntityImplCopyWith<_$SignUpEntityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

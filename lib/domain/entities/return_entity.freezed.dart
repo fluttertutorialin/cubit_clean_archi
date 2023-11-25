@@ -63,22 +63,22 @@ class _$ReturnEntityCopyWithImpl<$Res, $Val extends ReturnEntity>
 }
 
 /// @nodoc
-abstract class _$$_ReturnEntityCopyWith<$Res>
+abstract class _$$ReturnEntityImplCopyWith<$Res>
     implements $ReturnEntityCopyWith<$Res> {
-  factory _$$_ReturnEntityCopyWith(
-          _$_ReturnEntity value, $Res Function(_$_ReturnEntity) then) =
-      __$$_ReturnEntityCopyWithImpl<$Res>;
+  factory _$$ReturnEntityImplCopyWith(
+          _$ReturnEntityImpl value, $Res Function(_$ReturnEntityImpl) then) =
+      __$$ReturnEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? code, String? message});
 }
 
 /// @nodoc
-class __$$_ReturnEntityCopyWithImpl<$Res>
-    extends _$ReturnEntityCopyWithImpl<$Res, _$_ReturnEntity>
-    implements _$$_ReturnEntityCopyWith<$Res> {
-  __$$_ReturnEntityCopyWithImpl(
-      _$_ReturnEntity _value, $Res Function(_$_ReturnEntity) _then)
+class __$$ReturnEntityImplCopyWithImpl<$Res>
+    extends _$ReturnEntityCopyWithImpl<$Res, _$ReturnEntityImpl>
+    implements _$$ReturnEntityImplCopyWith<$Res> {
+  __$$ReturnEntityImplCopyWithImpl(
+      _$ReturnEntityImpl _value, $Res Function(_$ReturnEntityImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -87,7 +87,7 @@ class __$$_ReturnEntityCopyWithImpl<$Res>
     Object? code = freezed,
     Object? message = freezed,
   }) {
-    return _then(_$_ReturnEntity(
+    return _then(_$ReturnEntityImpl(
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -102,8 +102,8 @@ class __$$_ReturnEntityCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ReturnEntity extends _ReturnEntity {
-  const _$_ReturnEntity({this.code, this.message}) : super._();
+class _$ReturnEntityImpl extends _ReturnEntity {
+  const _$ReturnEntityImpl({this.code, this.message}) : super._();
 
   @override
   final String? code;
@@ -119,7 +119,7 @@ class _$_ReturnEntity extends _ReturnEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ReturnEntity &&
+            other is _$ReturnEntityImpl &&
             (identical(other.code, code) || other.code == code) &&
             (identical(other.message, message) || other.message == message));
   }
@@ -130,13 +130,13 @@ class _$_ReturnEntity extends _ReturnEntity {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ReturnEntityCopyWith<_$_ReturnEntity> get copyWith =>
-      __$$_ReturnEntityCopyWithImpl<_$_ReturnEntity>(this, _$identity);
+  _$$ReturnEntityImplCopyWith<_$ReturnEntityImpl> get copyWith =>
+      __$$ReturnEntityImplCopyWithImpl<_$ReturnEntityImpl>(this, _$identity);
 }
 
 abstract class _ReturnEntity extends ReturnEntity {
   const factory _ReturnEntity({final String? code, final String? message}) =
-      _$_ReturnEntity;
+      _$ReturnEntityImpl;
   const _ReturnEntity._() : super._();
 
   @override
@@ -145,6 +145,6 @@ abstract class _ReturnEntity extends ReturnEntity {
   String? get message;
   @override
   @JsonKey(ignore: true)
-  _$$_ReturnEntityCopyWith<_$_ReturnEntity> get copyWith =>
+  _$$ReturnEntityImplCopyWith<_$ReturnEntityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

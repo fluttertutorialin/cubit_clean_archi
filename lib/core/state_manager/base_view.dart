@@ -19,12 +19,12 @@ typedef BuilderCondition<S> = bool Function(S previous, S current);
 
 class BaseView<V extends ViewModel<S>, S> extends StatefulWidget {
   const BaseView({
-    Key? key,
+    super.key,
     this.builder,
     this.onViewModelReady,
     this.stateListener,
     this.buildWhen,
-  }) : super(key: key);
+  });
 
   final OnViewModelReady<V>? onViewModelReady;
   final OnViewModelStateBuilder<V, S>? builder;

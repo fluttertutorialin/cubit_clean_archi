@@ -7,7 +7,7 @@ import '../../../core/theme/theme.dart';
 class BottomNavBar extends StatelessWidget {
 
   final StatefulNavigationShell navigationShell;
-  BottomNavBar(this.navigationShell, {Key? key}) : super(key: key);
+  BottomNavBar(this.navigationShell, {super.key});
 
   @override
   Widget build(BuildContext context) => Scaffold(

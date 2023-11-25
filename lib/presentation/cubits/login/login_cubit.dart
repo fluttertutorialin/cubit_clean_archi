@@ -38,7 +38,7 @@ class LoginCubit extends Cubit<LoginState> {
         LoginInput(mobile: mobile, password: password));
     changeLoading();
 
-    emit(response.fold((exception) => LoginState.loginError(exception.message!),
+    emit(response.fold((exception) => LoginState.loginError(exception.message),
         (loginResponse) => LoginState.loginSuccess(loginResponse)));
   }
 

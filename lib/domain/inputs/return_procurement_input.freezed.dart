@@ -34,15 +34,15 @@ mixin _$ReturnProcurementInput {
 /// @nodoc
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
-class _$_ReturnProcurementInput implements _ReturnProcurementInput {
-  _$_ReturnProcurementInput(
+class _$ReturnProcurementInputImpl implements _ReturnProcurementInput {
+  _$ReturnProcurementInputImpl(
       {@JsonKey(name: JsonKeyConstant.imeiJsonParamKey) required this.imei,
       @JsonKey(name: JsonKeyConstant.physicalCheckJsonParamKey)
       required this.physicalCheck,
       @JsonKey(name: JsonKeyConstant.userIdJsonParamKey) required this.userId});
 
-  factory _$_ReturnProcurementInput.fromJson(Map<String, dynamic> json) =>
-      _$$_ReturnProcurementInputFromJson(json);
+  factory _$ReturnProcurementInputImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ReturnProcurementInputImplFromJson(json);
 
   @override
   @JsonKey(name: JsonKeyConstant.imeiJsonParamKey)
@@ -61,7 +61,7 @@ class _$_ReturnProcurementInput implements _ReturnProcurementInput {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ReturnProcurementInputToJson(
+    return _$$ReturnProcurementInputImplToJson(
       this,
     );
   }
@@ -74,10 +74,10 @@ abstract class _ReturnProcurementInput implements ReturnProcurementInput {
       @JsonKey(name: JsonKeyConstant.physicalCheckJsonParamKey)
       required final int physicalCheck,
       @JsonKey(name: JsonKeyConstant.userIdJsonParamKey)
-      required final int userId}) = _$_ReturnProcurementInput;
+      required final int userId}) = _$ReturnProcurementInputImpl;
 
   factory _ReturnProcurementInput.fromJson(Map<String, dynamic> json) =
-      _$_ReturnProcurementInput.fromJson;
+      _$ReturnProcurementInputImpl.fromJson;
 
   @override
   @JsonKey(name: JsonKeyConstant.imeiJsonParamKey)

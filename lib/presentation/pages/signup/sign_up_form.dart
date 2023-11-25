@@ -9,7 +9,7 @@ import '../../cubits/sign_up/sign_up_cubits.dart';
 import '../../widgets/components/components.dart';
 
 class SignUpForm extends StatefulWidget with FormValidationMixin {
-  SignUpForm({Key? key}) : super(key: key);
+  SignUpForm({super.key});
 
   @override
   createState() => _SignUpFormState();

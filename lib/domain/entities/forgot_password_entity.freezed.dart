@@ -58,22 +58,22 @@ class _$ForgotPasswordEntityCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_ForgotPasswordEntityCopyWith<$Res>
+abstract class _$$ForgotPasswordEntityImplCopyWith<$Res>
     implements $ForgotPasswordEntityCopyWith<$Res> {
-  factory _$$_ForgotPasswordEntityCopyWith(_$_ForgotPasswordEntity value,
-          $Res Function(_$_ForgotPasswordEntity) then) =
-      __$$_ForgotPasswordEntityCopyWithImpl<$Res>;
+  factory _$$ForgotPasswordEntityImplCopyWith(_$ForgotPasswordEntityImpl value,
+          $Res Function(_$ForgotPasswordEntityImpl) then) =
+      __$$ForgotPasswordEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool? isSignUp});
 }
 
 /// @nodoc
-class __$$_ForgotPasswordEntityCopyWithImpl<$Res>
-    extends _$ForgotPasswordEntityCopyWithImpl<$Res, _$_ForgotPasswordEntity>
-    implements _$$_ForgotPasswordEntityCopyWith<$Res> {
-  __$$_ForgotPasswordEntityCopyWithImpl(_$_ForgotPasswordEntity _value,
-      $Res Function(_$_ForgotPasswordEntity) _then)
+class __$$ForgotPasswordEntityImplCopyWithImpl<$Res>
+    extends _$ForgotPasswordEntityCopyWithImpl<$Res, _$ForgotPasswordEntityImpl>
+    implements _$$ForgotPasswordEntityImplCopyWith<$Res> {
+  __$$ForgotPasswordEntityImplCopyWithImpl(_$ForgotPasswordEntityImpl _value,
+      $Res Function(_$ForgotPasswordEntityImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -81,7 +81,7 @@ class __$$_ForgotPasswordEntityCopyWithImpl<$Res>
   $Res call({
     Object? isSignUp = freezed,
   }) {
-    return _then(_$_ForgotPasswordEntity(
+    return _then(_$ForgotPasswordEntityImpl(
       isSignUp: freezed == isSignUp
           ? _value.isSignUp
           : isSignUp // ignore: cast_nullable_to_non_nullable
@@ -92,8 +92,8 @@ class __$$_ForgotPasswordEntityCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ForgotPasswordEntity extends _ForgotPasswordEntity {
-  const _$_ForgotPasswordEntity({this.isSignUp}) : super._();
+class _$ForgotPasswordEntityImpl extends _ForgotPasswordEntity {
+  const _$ForgotPasswordEntityImpl({this.isSignUp}) : super._();
 
   @override
   final bool? isSignUp;
@@ -107,7 +107,7 @@ class _$_ForgotPasswordEntity extends _ForgotPasswordEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ForgotPasswordEntity &&
+            other is _$ForgotPasswordEntityImpl &&
             (identical(other.isSignUp, isSignUp) ||
                 other.isSignUp == isSignUp));
   }
@@ -118,20 +118,21 @@ class _$_ForgotPasswordEntity extends _ForgotPasswordEntity {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ForgotPasswordEntityCopyWith<_$_ForgotPasswordEntity> get copyWith =>
-      __$$_ForgotPasswordEntityCopyWithImpl<_$_ForgotPasswordEntity>(
-          this, _$identity);
+  _$$ForgotPasswordEntityImplCopyWith<_$ForgotPasswordEntityImpl>
+      get copyWith =>
+          __$$ForgotPasswordEntityImplCopyWithImpl<_$ForgotPasswordEntityImpl>(
+              this, _$identity);
 }
 
 abstract class _ForgotPasswordEntity extends ForgotPasswordEntity {
   const factory _ForgotPasswordEntity({final bool? isSignUp}) =
-      _$_ForgotPasswordEntity;
+      _$ForgotPasswordEntityImpl;
   const _ForgotPasswordEntity._() : super._();
 
   @override
   bool? get isSignUp;
   @override
   @JsonKey(ignore: true)
-  _$$_ForgotPasswordEntityCopyWith<_$_ForgotPasswordEntity> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$ForgotPasswordEntityImplCopyWith<_$ForgotPasswordEntityImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

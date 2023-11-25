@@ -69,22 +69,22 @@ class _$UserDetailEntityCopyWithImpl<$Res, $Val extends UserDetailEntity>
 }
 
 /// @nodoc
-abstract class _$$_UserDetailEntityCopyWith<$Res>
+abstract class _$$UserDetailEntityImplCopyWith<$Res>
     implements $UserDetailEntityCopyWith<$Res> {
-  factory _$$_UserDetailEntityCopyWith(
-          _$_UserDetailEntity value, $Res Function(_$_UserDetailEntity) then) =
-      __$$_UserDetailEntityCopyWithImpl<$Res>;
+  factory _$$UserDetailEntityImplCopyWith(_$UserDetailEntityImpl value,
+          $Res Function(_$UserDetailEntityImpl) then) =
+      __$$UserDetailEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? userId, String? userName, String? mobile});
 }
 
 /// @nodoc
-class __$$_UserDetailEntityCopyWithImpl<$Res>
-    extends _$UserDetailEntityCopyWithImpl<$Res, _$_UserDetailEntity>
-    implements _$$_UserDetailEntityCopyWith<$Res> {
-  __$$_UserDetailEntityCopyWithImpl(
-      _$_UserDetailEntity _value, $Res Function(_$_UserDetailEntity) _then)
+class __$$UserDetailEntityImplCopyWithImpl<$Res>
+    extends _$UserDetailEntityCopyWithImpl<$Res, _$UserDetailEntityImpl>
+    implements _$$UserDetailEntityImplCopyWith<$Res> {
+  __$$UserDetailEntityImplCopyWithImpl(_$UserDetailEntityImpl _value,
+      $Res Function(_$UserDetailEntityImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -94,7 +94,7 @@ class __$$_UserDetailEntityCopyWithImpl<$Res>
     Object? userName = freezed,
     Object? mobile = freezed,
   }) {
-    return _then(_$_UserDetailEntity(
+    return _then(_$UserDetailEntityImpl(
       userId: freezed == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
@@ -113,8 +113,8 @@ class __$$_UserDetailEntityCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UserDetailEntity extends _UserDetailEntity {
-  const _$_UserDetailEntity({this.userId, this.userName, this.mobile})
+class _$UserDetailEntityImpl extends _UserDetailEntity {
+  const _$UserDetailEntityImpl({this.userId, this.userName, this.mobile})
       : super._();
 
   @override
@@ -133,7 +133,7 @@ class _$_UserDetailEntity extends _UserDetailEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_UserDetailEntity &&
+            other is _$UserDetailEntityImpl &&
             (identical(other.userId, userId) || other.userId == userId) &&
             (identical(other.userName, userName) ||
                 other.userName == userName) &&
@@ -146,15 +146,16 @@ class _$_UserDetailEntity extends _UserDetailEntity {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_UserDetailEntityCopyWith<_$_UserDetailEntity> get copyWith =>
-      __$$_UserDetailEntityCopyWithImpl<_$_UserDetailEntity>(this, _$identity);
+  _$$UserDetailEntityImplCopyWith<_$UserDetailEntityImpl> get copyWith =>
+      __$$UserDetailEntityImplCopyWithImpl<_$UserDetailEntityImpl>(
+          this, _$identity);
 }
 
 abstract class _UserDetailEntity extends UserDetailEntity {
   const factory _UserDetailEntity(
       {final String? userId,
       final String? userName,
-      final String? mobile}) = _$_UserDetailEntity;
+      final String? mobile}) = _$UserDetailEntityImpl;
   const _UserDetailEntity._() : super._();
 
   @override
@@ -165,6 +166,6 @@ abstract class _UserDetailEntity extends UserDetailEntity {
   String? get mobile;
   @override
   @JsonKey(ignore: true)
-  _$$_UserDetailEntityCopyWith<_$_UserDetailEntity> get copyWith =>
+  _$$UserDetailEntityImplCopyWith<_$UserDetailEntityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

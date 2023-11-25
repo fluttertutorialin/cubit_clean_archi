@@ -67,7 +67,6 @@ class RemoteDataSourceImpl implements RemoteDataSource {
   @override
   Future<ApiResponse<ReturnEntity>> returnAwb(
       Map<String, dynamic>? params) async {
-    print(params);
     final response = await _returnAwbApi(params: params);
     if (response.statusCode == StatusCodeConstant.statusCodeOk200) {
       return ApiResponse(data: ReturnModel.fromJson(response.data).toDomain());

@@ -69,22 +69,22 @@ class _$LoginEntityCopyWithImpl<$Res, $Val extends LoginEntity>
 }
 
 /// @nodoc
-abstract class _$$_LoginEntityCopyWith<$Res>
+abstract class _$$LoginEntityImplCopyWith<$Res>
     implements $LoginEntityCopyWith<$Res> {
-  factory _$$_LoginEntityCopyWith(
-          _$_LoginEntity value, $Res Function(_$_LoginEntity) then) =
-      __$$_LoginEntityCopyWithImpl<$Res>;
+  factory _$$LoginEntityImplCopyWith(
+          _$LoginEntityImpl value, $Res Function(_$LoginEntityImpl) then) =
+      __$$LoginEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int? userId, String? userName, String? mobile});
 }
 
 /// @nodoc
-class __$$_LoginEntityCopyWithImpl<$Res>
-    extends _$LoginEntityCopyWithImpl<$Res, _$_LoginEntity>
-    implements _$$_LoginEntityCopyWith<$Res> {
-  __$$_LoginEntityCopyWithImpl(
-      _$_LoginEntity _value, $Res Function(_$_LoginEntity) _then)
+class __$$LoginEntityImplCopyWithImpl<$Res>
+    extends _$LoginEntityCopyWithImpl<$Res, _$LoginEntityImpl>
+    implements _$$LoginEntityImplCopyWith<$Res> {
+  __$$LoginEntityImplCopyWithImpl(
+      _$LoginEntityImpl _value, $Res Function(_$LoginEntityImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -94,7 +94,7 @@ class __$$_LoginEntityCopyWithImpl<$Res>
     Object? userName = freezed,
     Object? mobile = freezed,
   }) {
-    return _then(_$_LoginEntity(
+    return _then(_$LoginEntityImpl(
       userId: freezed == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
@@ -113,8 +113,9 @@ class __$$_LoginEntityCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_LoginEntity extends _LoginEntity {
-  const _$_LoginEntity({this.userId, this.userName, this.mobile}) : super._();
+class _$LoginEntityImpl extends _LoginEntity {
+  const _$LoginEntityImpl({this.userId, this.userName, this.mobile})
+      : super._();
 
   @override
   final int? userId;
@@ -132,7 +133,7 @@ class _$_LoginEntity extends _LoginEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LoginEntity &&
+            other is _$LoginEntityImpl &&
             (identical(other.userId, userId) || other.userId == userId) &&
             (identical(other.userName, userName) ||
                 other.userName == userName) &&
@@ -145,15 +146,15 @@ class _$_LoginEntity extends _LoginEntity {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_LoginEntityCopyWith<_$_LoginEntity> get copyWith =>
-      __$$_LoginEntityCopyWithImpl<_$_LoginEntity>(this, _$identity);
+  _$$LoginEntityImplCopyWith<_$LoginEntityImpl> get copyWith =>
+      __$$LoginEntityImplCopyWithImpl<_$LoginEntityImpl>(this, _$identity);
 }
 
 abstract class _LoginEntity extends LoginEntity {
   const factory _LoginEntity(
       {final int? userId,
       final String? userName,
-      final String? mobile}) = _$_LoginEntity;
+      final String? mobile}) = _$LoginEntityImpl;
   const _LoginEntity._() : super._();
 
   @override
@@ -164,6 +165,6 @@ abstract class _LoginEntity extends LoginEntity {
   String? get mobile;
   @override
   @JsonKey(ignore: true)
-  _$$_LoginEntityCopyWith<_$_LoginEntity> get copyWith =>
+  _$$LoginEntityImplCopyWith<_$LoginEntityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

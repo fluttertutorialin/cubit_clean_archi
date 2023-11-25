@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 abstract class ViewModel<S> extends Cubit<S> {
-  ViewModel(S state) : super(state);
+  ViewModel(super.state);
 
   set state(S value) {
     emit(value);

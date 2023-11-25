@@ -23,8 +23,8 @@ mixin _$DioBaseResponse {
 
 /// @nodoc
 
-class _$_DioBaseResponse extends _DioBaseResponse {
-  const _$_DioBaseResponse({this.statusCode, this.message, this.data})
+class _$DioBaseResponseImpl extends _DioBaseResponse {
+  const _$DioBaseResponseImpl({this.statusCode, this.message, this.data})
       : super._();
 
   @override
@@ -44,7 +44,7 @@ abstract class _DioBaseResponse extends DioBaseResponse {
   const factory _DioBaseResponse(
       {final int? statusCode,
       final String? message,
-      final dynamic data}) = _$_DioBaseResponse;
+      final dynamic data}) = _$DioBaseResponseImpl;
   const _DioBaseResponse._() : super._();
 
   @override

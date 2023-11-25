@@ -6,14 +6,14 @@ part of 'login_input.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_LoginInput _$$_LoginInputFromJson(Map<String, dynamic> json) =>
-    _$_LoginInput(
-      mobile: json['MOBILENO'] as String,
-      password: json['PASSWORD'] as String,
+_$LoginInputImpl _$$LoginInputImplFromJson(Map<String, dynamic> json) =>
+    _$LoginInputImpl(
+      mobile: json['mobile'] as String,
+      password: json['password'] as String,
     );
 
-Map<String, dynamic> _$$_LoginInputToJson(_$_LoginInput instance) =>
+Map<String, dynamic> _$$LoginInputImplToJson(_$LoginInputImpl instance) =>
     <String, dynamic>{
-      'MOBILENO': instance.mobile,
-      'PASSWORD': instance.password,
+      'mobile': instance.mobile,
+      'password': instance.password,
     };

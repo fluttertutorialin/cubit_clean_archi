@@ -87,24 +87,25 @@ class _$ReturnStateCopyWithImpl<$Res, $Val extends ReturnState>
 }
 
 /// @nodoc
-abstract class _$$_InitialCopyWith<$Res> {
-  factory _$$_InitialCopyWith(
-          _$_Initial value, $Res Function(_$_Initial) then) =
-      __$$_InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res>
-    extends _$ReturnStateCopyWithImpl<$Res, _$_Initial>
-    implements _$$_InitialCopyWith<$Res> {
-  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$ReturnStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial();
+class _$InitialImpl implements _Initial {
+  const _$InitialImpl();
 
   @override
   String toString() {
@@ -114,7 +115,7 @@ class _$_Initial implements _Initial {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Initial);
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -196,28 +197,29 @@ class _$_Initial implements _Initial {
 }
 
 abstract class _Initial implements ReturnState {
-  const factory _Initial() = _$_Initial;
+  const factory _Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class _$$_LoadingCopyWith<$Res> {
-  factory _$$_LoadingCopyWith(
-          _$_Loading value, $Res Function(_$_Loading) then) =
-      __$$_LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingImplCopyWith<$Res> {
+  factory _$$LoadingImplCopyWith(
+          _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
+      __$$LoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_LoadingCopyWithImpl<$Res>
-    extends _$ReturnStateCopyWithImpl<$Res, _$_Loading>
-    implements _$$_LoadingCopyWith<$Res> {
-  __$$_LoadingCopyWithImpl(_$_Loading _value, $Res Function(_$_Loading) _then)
+class __$$LoadingImplCopyWithImpl<$Res>
+    extends _$ReturnStateCopyWithImpl<$Res, _$LoadingImpl>
+    implements _$$LoadingImplCopyWith<$Res> {
+  __$$LoadingImplCopyWithImpl(
+      _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Loading implements _Loading {
-  const _$_Loading();
+class _$LoadingImpl implements _Loading {
+  const _$LoadingImpl();
 
   @override
   String toString() {
@@ -227,7 +229,7 @@ class _$_Loading implements _Loading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Loading);
+        (other.runtimeType == runtimeType && other is _$LoadingImpl);
   }
 
   @override
@@ -309,14 +311,14 @@ class _$_Loading implements _Loading {
 }
 
 abstract class _Loading implements ReturnState {
-  const factory _Loading() = _$_Loading;
+  const factory _Loading() = _$LoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_ReturnSuccessCopyWith<$Res> {
-  factory _$$_ReturnSuccessCopyWith(
-          _$_ReturnSuccess value, $Res Function(_$_ReturnSuccess) then) =
-      __$$_ReturnSuccessCopyWithImpl<$Res>;
+abstract class _$$ReturnSuccessImplCopyWith<$Res> {
+  factory _$$ReturnSuccessImplCopyWith(
+          _$ReturnSuccessImpl value, $Res Function(_$ReturnSuccessImpl) then) =
+      __$$ReturnSuccessImplCopyWithImpl<$Res>;
   @useResult
   $Res call({ReturnEntity returnEntity});
 
@@ -324,11 +326,11 @@ abstract class _$$_ReturnSuccessCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_ReturnSuccessCopyWithImpl<$Res>
-    extends _$ReturnStateCopyWithImpl<$Res, _$_ReturnSuccess>
-    implements _$$_ReturnSuccessCopyWith<$Res> {
-  __$$_ReturnSuccessCopyWithImpl(
-      _$_ReturnSuccess _value, $Res Function(_$_ReturnSuccess) _then)
+class __$$ReturnSuccessImplCopyWithImpl<$Res>
+    extends _$ReturnStateCopyWithImpl<$Res, _$ReturnSuccessImpl>
+    implements _$$ReturnSuccessImplCopyWith<$Res> {
+  __$$ReturnSuccessImplCopyWithImpl(
+      _$ReturnSuccessImpl _value, $Res Function(_$ReturnSuccessImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -336,7 +338,7 @@ class __$$_ReturnSuccessCopyWithImpl<$Res>
   $Res call({
     Object? returnEntity = null,
   }) {
-    return _then(_$_ReturnSuccess(
+    return _then(_$ReturnSuccessImpl(
       null == returnEntity
           ? _value.returnEntity
           : returnEntity // ignore: cast_nullable_to_non_nullable
@@ -355,8 +357,8 @@ class __$$_ReturnSuccessCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ReturnSuccess implements _ReturnSuccess {
-  const _$_ReturnSuccess(this.returnEntity);
+class _$ReturnSuccessImpl implements _ReturnSuccess {
+  const _$ReturnSuccessImpl(this.returnEntity);
 
   @override
   final ReturnEntity returnEntity;
@@ -370,7 +372,7 @@ class _$_ReturnSuccess implements _ReturnSuccess {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ReturnSuccess &&
+            other is _$ReturnSuccessImpl &&
             (identical(other.returnEntity, returnEntity) ||
                 other.returnEntity == returnEntity));
   }
@@ -381,8 +383,8 @@ class _$_ReturnSuccess implements _ReturnSuccess {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ReturnSuccessCopyWith<_$_ReturnSuccess> get copyWith =>
-      __$$_ReturnSuccessCopyWithImpl<_$_ReturnSuccess>(this, _$identity);
+  _$$ReturnSuccessImplCopyWith<_$ReturnSuccessImpl> get copyWith =>
+      __$$ReturnSuccessImplCopyWithImpl<_$ReturnSuccessImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -461,29 +463,29 @@ class _$_ReturnSuccess implements _ReturnSuccess {
 
 abstract class _ReturnSuccess implements ReturnState {
   const factory _ReturnSuccess(final ReturnEntity returnEntity) =
-      _$_ReturnSuccess;
+      _$ReturnSuccessImpl;
 
   ReturnEntity get returnEntity;
   @JsonKey(ignore: true)
-  _$$_ReturnSuccessCopyWith<_$_ReturnSuccess> get copyWith =>
+  _$$ReturnSuccessImplCopyWith<_$ReturnSuccessImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_ReturnErrorCopyWith<$Res> {
-  factory _$$_ReturnErrorCopyWith(
-          _$_ReturnError value, $Res Function(_$_ReturnError) then) =
-      __$$_ReturnErrorCopyWithImpl<$Res>;
+abstract class _$$ReturnErrorImplCopyWith<$Res> {
+  factory _$$ReturnErrorImplCopyWith(
+          _$ReturnErrorImpl value, $Res Function(_$ReturnErrorImpl) then) =
+      __$$ReturnErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String error});
 }
 
 /// @nodoc
-class __$$_ReturnErrorCopyWithImpl<$Res>
-    extends _$ReturnStateCopyWithImpl<$Res, _$_ReturnError>
-    implements _$$_ReturnErrorCopyWith<$Res> {
-  __$$_ReturnErrorCopyWithImpl(
-      _$_ReturnError _value, $Res Function(_$_ReturnError) _then)
+class __$$ReturnErrorImplCopyWithImpl<$Res>
+    extends _$ReturnStateCopyWithImpl<$Res, _$ReturnErrorImpl>
+    implements _$$ReturnErrorImplCopyWith<$Res> {
+  __$$ReturnErrorImplCopyWithImpl(
+      _$ReturnErrorImpl _value, $Res Function(_$ReturnErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -491,7 +493,7 @@ class __$$_ReturnErrorCopyWithImpl<$Res>
   $Res call({
     Object? error = null,
   }) {
-    return _then(_$_ReturnError(
+    return _then(_$ReturnErrorImpl(
       null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
@@ -502,8 +504,8 @@ class __$$_ReturnErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ReturnError implements _ReturnError {
-  const _$_ReturnError(this.error);
+class _$ReturnErrorImpl implements _ReturnError {
+  const _$ReturnErrorImpl(this.error);
 
   @override
   final String error;
@@ -517,7 +519,7 @@ class _$_ReturnError implements _ReturnError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ReturnError &&
+            other is _$ReturnErrorImpl &&
             (identical(other.error, error) || other.error == error));
   }
 
@@ -527,8 +529,8 @@ class _$_ReturnError implements _ReturnError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ReturnErrorCopyWith<_$_ReturnError> get copyWith =>
-      __$$_ReturnErrorCopyWithImpl<_$_ReturnError>(this, _$identity);
+  _$$ReturnErrorImplCopyWith<_$ReturnErrorImpl> get copyWith =>
+      __$$ReturnErrorImplCopyWithImpl<_$ReturnErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -606,10 +608,10 @@ class _$_ReturnError implements _ReturnError {
 }
 
 abstract class _ReturnError implements ReturnState {
-  const factory _ReturnError(final String error) = _$_ReturnError;
+  const factory _ReturnError(final String error) = _$ReturnErrorImpl;
 
   String get error;
   @JsonKey(ignore: true)
-  _$$_ReturnErrorCopyWith<_$_ReturnError> get copyWith =>
+  _$$ReturnErrorImplCopyWith<_$ReturnErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

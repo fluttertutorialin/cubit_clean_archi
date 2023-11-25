@@ -31,14 +31,14 @@ mixin _$ReturnAwbInput {
 /// @nodoc
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
-class _$_ReturnAwbInput implements _ReturnAwbInput {
-  _$_ReturnAwbInput(
+class _$ReturnAwbInputImpl implements _ReturnAwbInput {
+  _$ReturnAwbInputImpl(
       {@JsonKey(name: JsonKeyConstant.awbNumberJsonParamKey)
       required this.awbNumber,
       @JsonKey(name: JsonKeyConstant.userIdJsonParamKey) required this.userId});
 
-  factory _$_ReturnAwbInput.fromJson(Map<String, dynamic> json) =>
-      _$$_ReturnAwbInputFromJson(json);
+  factory _$ReturnAwbInputImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ReturnAwbInputImplFromJson(json);
 
   @override
   @JsonKey(name: JsonKeyConstant.awbNumberJsonParamKey)
@@ -54,7 +54,7 @@ class _$_ReturnAwbInput implements _ReturnAwbInput {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ReturnAwbInputToJson(
+    return _$$ReturnAwbInputImplToJson(
       this,
     );
   }
@@ -65,10 +65,10 @@ abstract class _ReturnAwbInput implements ReturnAwbInput {
       {@JsonKey(name: JsonKeyConstant.awbNumberJsonParamKey)
       required final String awbNumber,
       @JsonKey(name: JsonKeyConstant.userIdJsonParamKey)
-      required final int userId}) = _$_ReturnAwbInput;
+      required final int userId}) = _$ReturnAwbInputImpl;
 
   factory _ReturnAwbInput.fromJson(Map<String, dynamic> json) =
-      _$_ReturnAwbInput.fromJson;
+      _$ReturnAwbInputImpl.fromJson;
 
   @override
   @JsonKey(name: JsonKeyConstant.awbNumberJsonParamKey)

@@ -21,8 +21,8 @@ mixin _$ApiResponse<T> {
 
 /// @nodoc
 
-class _$_ApiResponse<T> extends _ApiResponse<T> {
-  const _$_ApiResponse({this.data}) : super._();
+class _$ApiResponseImpl<T> extends _ApiResponse<T> {
+  const _$ApiResponseImpl({this.data}) : super._();
 
   @override
   final T? data;
@@ -34,7 +34,7 @@ class _$_ApiResponse<T> extends _ApiResponse<T> {
 }
 
 abstract class _ApiResponse<T> extends ApiResponse<T> {
-  const factory _ApiResponse({final T? data}) = _$_ApiResponse<T>;
+  const factory _ApiResponse({final T? data}) = _$ApiResponseImpl<T>;
   const _ApiResponse._() : super._();
 
   @override

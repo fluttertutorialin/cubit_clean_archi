@@ -6,18 +6,18 @@ part of 'return_procurement_input.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ReturnProcurementInput _$$_ReturnProcurementInputFromJson(
+_$ReturnProcurementInputImpl _$$ReturnProcurementInputImplFromJson(
         Map<String, dynamic> json) =>
-    _$_ReturnProcurementInput(
-      imei: json['IMEINo'] as String,
-      physicalCheck: json['IsPhysicalOK'] as int,
-      userId: json['USERID'] as int,
+    _$ReturnProcurementInputImpl(
+      imei: json['imeiNumber'] as String,
+      physicalCheck: json['physicalCheck'] as int,
+      userId: json['userId'] as int,
     );
 
-Map<String, dynamic> _$$_ReturnProcurementInputToJson(
-        _$_ReturnProcurementInput instance) =>
+Map<String, dynamic> _$$ReturnProcurementInputImplToJson(
+        _$ReturnProcurementInputImpl instance) =>
     <String, dynamic>{
-      'IMEINo': instance.imei,
-      'IsPhysicalOK': instance.physicalCheck,
-      'USERID': instance.userId,
+      'imeiNumber': instance.imei,
+      'physicalCheck': instance.physicalCheck,
+      'userId': instance.userId,
     };
